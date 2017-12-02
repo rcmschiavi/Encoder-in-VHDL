@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ELD_1\Desktop\Encoder\simulation\modelsim
+Eencoder_vhdl
+Z1 w1512167058
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\ELD_1\Desktop\Encoder\simulation\modelsim
+Z8 8C:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd
+Z9 FC:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd
+l0
+L6
+VP?35mB5:lchOQ@V^0mY:`0
+Z10 OV;C;10.1d;51
+31
+Z11 !s108 1512167882.925000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd|
+Z13 !s107 C:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 UClj7j@UV[_];gIEl]Gb61
+!i10b 1
+Aencoder
+R2
+R3
+R4
+R5
+R6
+Z16 DEx4 work 12 encoder_vhdl 0 22 P?35mB5:lchOQ@V^0mY:`0
+l21
+L16
+V_ZUo73co1<AA]PoP8ZHZj3
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 FemNEdDShiXTGP53S=BCO1
+!i10b 1
+Etb_encoder
+Z17 w1512167866
+R5
+R6
+R7
+Z18 8C:/Users/ELD_1/Desktop/Encoder/tb_encoder.vhd
+Z19 FC:/Users/ELD_1/Desktop/Encoder/tb_encoder.vhd
+l0
+L4
+VKf^8Iae[;VI[_E[]Hk?z21
+!s100 JjF=BfoTHNHW4cKU`>m`j2
+R10
+31
+!i10b 1
+Z20 !s108 1512167883.125000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/ELD_1/Desktop/Encoder/tb_encoder.vhd|
+Z22 !s107 C:/Users/ELD_1/Desktop/Encoder/tb_encoder.vhd|
+R14
+R15
+Asimulacao
+R2
+R3
+R4
+R16
+R5
+R6
+DEx4 work 10 tb_encoder 0 22 Kf^8Iae[;VI[_E[]Hk?z21
+l15
+L8
+V[hS=`d?:VzQ:Oh;38N>JA0
+!s100 g]BZ<;j`?D^eeYHzVi9TX2
+R10
+31
+!i10b 1
+R20
+R21
+R22
+R14
+R15
