@@ -14,7 +14,7 @@ architecture simulacao of tb_encoder is
 		signal dir: std_logic;
 		signal move: std_logic;
 		signal conter: integer range 0 to 127;
-
+		
 begin 
 
 uut: entity work.encoder_vhdl 
