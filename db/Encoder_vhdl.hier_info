@@ -1,0 +1,38 @@
+|trabalho
+A => encoder_vhdl:inst.A
+B => encoder_vhdl:inst.B
+clk => encoder_vhdl:inst.clk
+
+
+|trabalho|encoder_vhdl:inst
+A => analise.IN0
+A => a_ant.DATAB
+A => analise.IN1
+B => analise.IN1
+B => b_ant.DATAB
+B => analise.IN1
+clk => dir_si.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => moves.CLK
+clk => \analise:b_ant.CLK
+clk => \analise:a_ant.CLK
+clk => \analise:ve_mov.CLK
+dir <= dir_si.DB_MAX_OUTPUT_PORT_TYPE
+move <= moves.DB_MAX_OUTPUT_PORT_TYPE
+conter[0] <= contador[0].DB_MAX_OUTPUT_PORT_TYPE
+conter[1] <= contador[1].DB_MAX_OUTPUT_PORT_TYPE
+conter[2] <= contador[2].DB_MAX_OUTPUT_PORT_TYPE
+conter[3] <= contador[3].DB_MAX_OUTPUT_PORT_TYPE
+conter[4] <= contador[4].DB_MAX_OUTPUT_PORT_TYPE
+conter[5] <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
+conter[6] <= contador[6].DB_MAX_OUTPUT_PORT_TYPE
+conter[7] <= contador[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

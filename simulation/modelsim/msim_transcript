@@ -1,17 +1,19 @@
-# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do Encoder_vhdl_run_msim_rtl_vhdl.do 
+# Reading C:/intelFPGA_pro/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Encoder_vhdl_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5c Lib Mapping Utility 2017.01 Jan 23 2017
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
-#          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# vcom -93 -work work {C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 22:33:38 on Dec 02,2017
+# vcom -reportprogress 300 -93 -work work C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -20,25 +22,30 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity encoder_vhdl
 # -- Compiling architecture encoder of encoder_vhdl
-# ** Warning: [9] C:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd(25): (vcom-1013) Initial value of "a_ant" depends on value of signal "A".
+# ** Warning: C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd(27): (vcom-1013) Initial value of "a_ant" depends on value of signal "A".
+# ** Warning: C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd(28): (vcom-1013) Initial value of "b_ant" depends on value of signal "B".
+# End time: 22:33:38 on Dec 02,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # 
-# ** Warning: [9] C:/Users/ELD_1/Desktop/Encoder/Encoder_vhdl.vhd(26): (vcom-1013) Initial value of "b_ant" depends on value of signal "B".
-# 
-# 
-# vcom -93 -work work {C:/Users/ELD_1/Desktop/Encoder/tb_encoder.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# vcom -93 -work work {C:/github/Encoder/Encoder-in-VHDL/tb_encoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 22:33:38 on Dec 02,2017
+# vcom -reportprogress 300 -93 -work work C:/github/Encoder/Encoder-in-VHDL/tb_encoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_encoder
-# -- Compiling architecture simulacao of tb_encoder
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading package NUMERIC_STD
+# -- Compiling entity tb_encoder
+# -- Compiling architecture simulacao of tb_encoder
 # -- Loading entity encoder_vhdl
+# End time: 22:33:38 on Dec 02,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  tb_encoder
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_encoder 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  tb_encoder
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" tb_encoder 
+# Start time: 22:33:38 on Dec 02,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -54,3 +61,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# End time: 22:36:45 on Dec 02,2017, Elapsed time: 0:03:07
+# Errors: 0, Warnings: 0

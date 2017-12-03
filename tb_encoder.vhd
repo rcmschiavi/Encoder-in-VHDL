@@ -1,5 +1,7 @@
 library ieee;
-use ieee.std_logic_1164.all;
+use IEEE.STD_logic_1164.all; 
+use IEEE.STD_logic_unsigned.all;
+use IEEE.numeric_std.all;
 
 entity tb_encoder is 
 	
@@ -11,22 +13,21 @@ architecture simulacao of tb_encoder is
 		signal clk: std_logic;
 		signal dir: std_logic;
 		signal move: std_logic;
+		signal conter: integer range 0 to 127;
 
 begin 
 
 uut: entity work.encoder_vhdl 
-port map (A,B,clk, dir, move);
+port map (A,B,clk, dir, move, conter);
 
 clock: process
 begin 
 		clk<='0';
-	for cont in integer range 0 to 3000000 loop 
+	for cont in integer range 0 to 4000000 loop 
 		wait for 10 ns;
 		clk<= not clk;
 	end loop;
-	
 	wait;
-	
 end process;
 
 giro_a: process
@@ -42,7 +43,7 @@ begin
 		A<=not A;
 		wait for 500 ns;
 	end loop;
-	
+	wait;
 end process; 
 
 giro_b: process
@@ -58,7 +59,7 @@ begin
 		wait for 500 ns;
 		B<=not B;
 	end loop;
-	
+	wait;
 end process;
  
 end simulacao; 

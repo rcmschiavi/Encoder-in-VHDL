@@ -1,8 +1,8 @@
-Analysis & Synthesis Status : Successful - Fri Dec 01 20:46:17 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Sat Dec 02 22:33:17 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Encoder_vhdl
 Top-level Entity Name : trabalho
-Family : Cyclone IV GX
+Family : MAX 10
 Total logic elements : 0
     Total combinational functions : 0
     Dedicated logic registers : 0
@@ -11,8 +11,6 @@ Total pins : 3
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
-Total GXB Receiver Channel PCS : 0
-Total GXB Receiver Channel PMA : 0
-Total GXB Transmitter Channel PCS : 0
-Total GXB Transmitter Channel PMA : 0
 Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
