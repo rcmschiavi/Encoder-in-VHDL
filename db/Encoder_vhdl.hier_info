@@ -1,7 +1,15 @@
 |trabalho
+dir <= encoder_vhdl:inst.dir
 A => encoder_vhdl:inst.A
 B => encoder_vhdl:inst.B
 clk => encoder_vhdl:inst.clk
+cont[0] <= encoder_vhdl:inst.conter[0]
+cont[1] <= encoder_vhdl:inst.conter[1]
+cont[2] <= encoder_vhdl:inst.conter[2]
+cont[3] <= encoder_vhdl:inst.conter[3]
+cont[4] <= encoder_vhdl:inst.conter[4]
+cont[5] <= encoder_vhdl:inst.conter[5]
+cont[6] <= encoder_vhdl:inst.conter[6]
 
 
 |trabalho|encoder_vhdl:inst
@@ -19,7 +27,6 @@ clk => contador[3].CLK
 clk => contador[4].CLK
 clk => contador[5].CLK
 clk => contador[6].CLK
-clk => contador[7].CLK
 clk => moves.CLK
 clk => \analise:b_ant.CLK
 clk => \analise:a_ant.CLK
@@ -33,6 +40,5 @@ conter[3] <= contador[3].DB_MAX_OUTPUT_PORT_TYPE
 conter[4] <= contador[4].DB_MAX_OUTPUT_PORT_TYPE
 conter[5] <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
 conter[6] <= contador[6].DB_MAX_OUTPUT_PORT_TYPE
-conter[7] <= contador[7].DB_MAX_OUTPUT_PORT_TYPE
 
 

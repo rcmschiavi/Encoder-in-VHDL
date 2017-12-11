@@ -62,8 +62,8 @@ agreement for further details.
 	(port
 		(pt 160 64)
 		(output)
-		(text "conter[20..0]" (rect 0 0 49 12)(font "Arial" ))
-		(text "conter[20..0]" (rect 90 59 139 71)(font "Arial" ))
+		(text "conter[6..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "conter[6..0]" (rect 95 59 139 71)(font "Arial" ))
 		(line (pt 160 64)(pt 144 64)(line_width 3))
 	)
 	(drawing

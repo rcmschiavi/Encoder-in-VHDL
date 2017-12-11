@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/github/Encoder/Encoder-in-VHDL/simulation/modelsim
 Eencoder_vhdl
-Z1 w1512261182
+Z1 w1513012379
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
@@ -20,13 +20,13 @@ Z7 8C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd
 Z8 FC:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd
 l0
 L6
-VScW>jo2j8D8Y^VkiRTLPe0
-!s100 dAO2>;4Qm0nP]117dM7hh2
+V]2XSe<`KS:?5B3c:WNRTQ2
+!s100 7Z<Fl55^EOAR:Emb0Y>z`1
 Z9 OV;C;10.5c;63
 31
-Z10 !s110 1512261218
+Z10 !s110 1513012468
 !i10b 1
-Z11 !s108 1512261218.000000
+Z11 !s108 1513012468.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd|
 Z13 !s107 C:/github/Encoder/Encoder-in-VHDL/Encoder_vhdl.vhd|
 !i113 1
@@ -38,11 +38,11 @@ R3
 R4
 R5
 R6
-Z16 DEx4 work 12 encoder_vhdl 0 22 ScW>jo2j8D8Y^VkiRTLPe0
+Z16 DEx4 work 12 encoder_vhdl 0 22 ]2XSe<`KS:?5B3c:WNRTQ2
 l23
 L17
-V8<Gd_n5WRDgQIW^^<7bgN2
-!s100 [SV^d=oe26V5KCh>=z2c42
+V;N0UG6h^1^_`YFAlC`HX01
+!s100 <3JE:ejOA9Y6a@D=B1aVa2
 R9
 31
 R10
@@ -54,7 +54,7 @@ R13
 R14
 R15
 Etb_encoder
-Z17 w1512260997
+Z17 w1513011750
 R2
 R3
 R4
@@ -87,8 +87,8 @@ R6
 DEx4 work 10 tb_encoder 0 22 KKzWEn?Odb[NTdR>z4HY51
 l18
 L10
-V[Ud^C;[48Do5:W3=beSFg1
-!s100 ]>25[LaF3=IY=@cGz4Pd^2
+VfWIfK_OzXe5S`VHh?GLhI3
+!s100 fTV7S^>9::J45E[PO_3ec1
 R9
 31
 R10

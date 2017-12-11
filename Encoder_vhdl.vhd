@@ -10,7 +10,7 @@ port (	 A: in std_logic ;  -- Declaração das variáveis
 			  clk: in std_logic;
 			  dir: out std_logic;
 			  move: out std_logic;
-			  conter: out integer range 0 to 127
+			  conter: out std_logic_vector(6 downto 0)
 			 );
 end encoder_vhdl; 
 
@@ -18,7 +18,7 @@ architecture encoder of encoder_vhdl is
 	
 	signal dir_si: std_logic := '0';
 	signal moves: std_logic:='0';
-	signal contador: integer range 0 to 127:=0;
+	signal contador: std_logic_vector(6 downto 0):="0000000";
 	
 begin 
 
@@ -37,11 +37,7 @@ if rising_edge (clk) then
 		if(ve_mov='0') then
 			moves<= not moves;
 			ve_mov:='1';
-			if contador<127 then
-			contador<=contador+1;
-			else
-				contador<=0;
-			end if;
+			contador<=contador+'1';
 		end if;
 		a_ant:=A;
 		b_ant:=B;

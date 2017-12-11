@@ -13,7 +13,7 @@ architecture simulacao of tb_encoder is
 		signal clk: std_logic;
 		signal dir: std_logic;
 		signal move: std_logic;
-		signal conter: integer range 0 to 127;
+		signal conter: std_logic_vector(6 downto 0);
 		
 begin 
 

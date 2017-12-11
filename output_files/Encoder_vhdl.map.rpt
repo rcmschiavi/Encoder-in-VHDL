@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Encoder_vhdl
-Sat Dec 02 22:33:17 2017
+Mon Dec 11 15:16:19 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 02 22:33:17 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 11 15:16:19 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Encoder_vhdl                                ;
 ; Top-level Entity Name              ; trabalho                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 3                                           ;
+; Total logic elements               ; 14                                          ;
+;     Total combinational functions  ; 14                                          ;
+;     Dedicated logic registers      ; 11                                          ;
+; Total registers                    ; 11                                          ;
+; Total pins                         ; 11                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +68,7 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; 10M08DAF484C8G     ;                    ;
+; Device                                                                     ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                                      ; trabalho           ; Encoder_vhdl       ;
 ; Family name                                                                ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -157,10 +158,11 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -174,44 +176,46 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 3     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; A     ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 3     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 14        ;
+;                                             ;           ;
+; Total combinational functions               ; 14        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 3         ;
+;     -- 3 input functions                    ; 6         ;
+;     -- <=2 input functions                  ; 5         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 9         ;
+;     -- arithmetic mode                      ; 5         ;
+;                                             ;           ;
+; Total registers                             ; 11        ;
+;     -- Dedicated logic registers            ; 11        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 11        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 11        ;
+; Total fan-out                               ; 86        ;
+; Average fan-out                             ; 1.83      ;
++---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |trabalho                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 3    ; 0            ; 0          ; |trabalho           ; trabalho    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name         ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+--------------+--------------+
+; |trabalho                  ; 14 (0)              ; 11 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |trabalho                   ; trabalho     ; work         ;
+;    |encoder_vhdl:inst|     ; 14 (14)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trabalho|encoder_vhdl:inst ; encoder_vhdl ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -220,26 +224,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 11    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 6     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; encoder_vhdl:inst|\analise:ve_mov      ; 3       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 3                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 11                          ;
+; cycloneiii_ff         ; 11                          ;
+;     ENA               ; 6                           ;
+;     plain             ; 5                           ;
+; cycloneiii_lcell_comb ; 14                          ;
+;     arith             ; 5                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 9                           ;
+;         1 data inputs ; 1                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 3                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.45                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -257,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Dec 02 22:33:02 2017
+    Info: Processing started: Mon Dec 11 15:16:04 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Encoder_vhdl -c Encoder_vhdl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -274,32 +299,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file envia_s
     Info (12023): Found entity 1: envia_serial File: C:/github/Encoder/Encoder-in-VHDL/envia_serial.vhd Line: 32
 Info (12127): Elaborating entity "trabalho" for the top level hierarchy
 Info (12128): Elaborating entity "encoder_vhdl" for hierarchy "encoder_vhdl:inst"
-Warning (12001): Port "conter[10]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[11]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[12]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[13]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[14]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[15]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[16]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[17]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[18]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[19]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[20]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[8]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
-Warning (12001): Port "conter[9]" does not exist in entity definition of "encoder_vhdl".  The port's range differs between the entity definition and its actual instantiation, "encoder_vhdl:inst".
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "A"
-    Warning (15610): No output dependent on input pin "B"
-    Warning (15610): No output dependent on input pin "clk"
-Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 706 megabytes
-    Info: Processing ended: Sat Dec 02 22:33:17 2017
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 710 megabytes
+    Info: Processing ended: Mon Dec 11 15:16:19 2017
     Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Total CPU time (on all processors): 00:00:34
 
 
